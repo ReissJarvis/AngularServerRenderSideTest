@@ -1,0 +1,17 @@
+<div class="home">
+  <h1>Job List</h1>
+  <table>
+    <thead>
+      <th>id</th>
+      <th>Title</th>
+      <th>Price</th>
+    </thead>
+    <tbody [hidden]="loading">
+    <tr *ngFor="let item of items">
+      <td>{{item.id}}</td>
+      <td>{{item.title}}</td>
+      <td>{{item.price}}</td>
+    </tr>
+    </tbody>
+  </table>
+</div>
